@@ -7,8 +7,7 @@ public class main {
     public static void main(String[] args) {
        
         Scanner input = new Scanner(System.in);
-        Scanner input = new Scanner(System.in);
-        //subarray
+  
         int jumang = input.nextInt();
        
         int angkaarr []= new int[jumang];
