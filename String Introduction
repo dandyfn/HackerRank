@@ -1,0 +1,23 @@
+package HackerRank;
+
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String hurufdepan = input.next();
+        String hurufbelakang = input.next();
+        StringBuilder wer = new StringBuilder(hurufdepan);
+        StringBuilder hgf = new StringBuilder(hurufbelakang);
+        StringBuilder ghj = wer.append(hgf);
+        System.out.println(ghj.length());
+        if (hurufdepan.compareTo(hurufbelakang)>0) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+        String hdepan = hurufdepan.substring(0, 1).toUpperCase()+hurufdepan.substring(1);
+        String hbelakang = hurufbelakang.substring(0, 1).toUpperCase()+hurufbelakang.substring(1); 
+        System.out.println(hdepan+" "+hbelakang);
+    }
+}
