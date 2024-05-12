@@ -1,0 +1,14 @@
+package HackerRank;
+
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        input.nextLine();
+        for (int i = 1; i <= 10; i++) {
+            int hasilkali = ang * i;
+            System.out.println(ang+" x "+i+" = "+hasilkali);
+        }
+    }
+}
