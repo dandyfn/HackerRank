@@ -1,0 +1,19 @@
+package HackerRank;
+
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int ti=0;
+        while (input.hasNext()) {
+            System.out.println(++ti+input.nextLine());
+        }
+       
+        while ( input.hasNext()) {
+            ti++;
+            System.out.println(ti+input.nextLine());
+        }
+        int ang = input.nextInt();
+    }
+}
