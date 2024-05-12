@@ -1,0 +1,15 @@
+package HackerRank;
+
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String masukanangka1 = input.next();
+        String masukanangka2 = input.next();
+        BigInteger angkabaru1 = new BigInteger(masukanangka1);
+        BigInteger angkabaru2 = new BigInteger(masukanangka2);
+        System.out.println(angkabaru1.multiply(angkabaru2));
+
+    }
+}
