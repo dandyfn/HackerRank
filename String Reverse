@@ -1,0 +1,18 @@
+package HackerRank;
+
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String kata = input.next();
+        StringBuilder katabaru = new StringBuilder(kata);
+        StringBuilder katabalik = katabaru.reverse();
+        String katastring = new String(katabalik);
+        if (kata.equals(katastring)) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+}
