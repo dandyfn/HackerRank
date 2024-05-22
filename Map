@@ -1,0 +1,47 @@
+ int jumlahkontak = input.nextInt(); input.nextLine();
+        Map<String, Integer>daftarkontak=new HashMap<>();
+        for (int i = 0; i < jumlahkontak; i++) {
+            
+            String namakontak = input.nextLine();
+            int nomortelepon = input.nextInt();
+            input.nextLine();
+            daftarkontak.put( namakontak, nomortelepon);
+        }
+       
+        while (input.hasNext()) {
+            String carinamakontak = input.nextLine();
+           
+            if (daftarkontak.containsKey(carinamakontak)) {
+                System.out.println(carinamakontak+"="+daftarkontak.get(carinamakontak));
+            } else {
+                System.out.println("Not found");
+            }
+        }
+        //System.out.println("ku tak");
+        //list
+        int angkalist = input.nextInt();
+        ArrayList<Integer>semakin=new ArrayList<>();
+        for (int i = 0; i < angkalist; i++) {
+            int angka = input.nextInt();
+            semakin.add(angka);
+        }
+        int kueriperintah = input.nextInt();
+        for (int i = 0; i < kueriperintah; i++) {
+            input.nextLine();
+            String permintaan = input.nextLine();
+            if (permintaan.equalsIgnoreCase("Insert")) {
+                int indeksbaruangka = input.nextInt();
+                int angkatambahan = input.nextInt();
+                semakin.add(indeksbaruangka, angkatambahan);
+           
+            } else if (permintaan.equalsIgnoreCase("Delete")) {
+                int indekshapusangka = input.nextInt();
+                semakin.remove(indekshapusangka);
+            }
+            else {
+                System.out.println("Wrong Answer");
+            }
+        } //.out.println(semakin);
+        for (int integer : semakin) {
+            System.out.print(integer+" ");
+        }
